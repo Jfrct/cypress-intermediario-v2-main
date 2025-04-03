@@ -18,4 +18,4 @@ Cypress.Commands.add('login', (
     cy.get('.qa-user-avatar').click()
     cy.contains('Sign out').click()
   })
-  
+  //teste
