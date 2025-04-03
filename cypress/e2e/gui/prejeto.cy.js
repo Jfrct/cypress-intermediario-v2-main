@@ -13,7 +13,7 @@ describe('Criar projeto', () => {
             description:faker.random.words(5)
         }
         
-        cy.create_project_gui(project)
+        cy.create_project_gui(project) // o project serve para referenciar as variaveis criadas, e passar essa informação para os comandos
 
         cy.url().should('be.equal', `${Cypress.config('baseUrl')}/${Cypress.env('user_name')}/${project.name}`)
         cy.contains(project.name).should('be.visible')                                                    //fazem as verificacoes por nome e descrição se o projeto foi criado
