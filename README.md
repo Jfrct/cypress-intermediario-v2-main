@@ -1,35 +1,35 @@
-# Testes automatizados com Cypress - Intermediário
+# Cypress Intermediário  
 
-👋 Seja bem-vinda(o)!
+Este repositório reúne práticas essenciais para testes automatizados com Cypress, abordando desde a configuração inicial até técnicas avançadas.  
 
-É muito bom tê-la(o) aqui. Tenho certeza que você vai adorar este curso. ❤️
+## 📌 Conteúdo  
 
-## O que você vai aprender
+### Configuração e Instalação  
+- 🛠 Como configurar o ambiente local de desenvolvimento  
+- 🔧 Como instalar e configurar o Cypress  
 
-Durante o curso de testes automatizados com Cypress (intermediário) você vai aprender:
+### Criação de Testes  
+- 🖥 Como criar testes automatizados de interface gráfica de usuário  
+- 🔗 Como criar testes automatizados de API (com feedback visual no navegador)  
+- 🔑 Como testar APIs que necessitam um token de acesso  
+- 🚀 Como criar testes otimizados e direto-ao-ponto  
 
-- Como configurar o ambiente local de desenvolvimento
-- Como instalar e configurar o Cypress
-- Como criar testes automatizados de interface gráfica de usuário
-- Como criar testes automatizados de API (com _feedback_ visual no navegador)
-- Como testar APIs que necessitam um _token_ de acesso
-- Como criar testes otimizados e direto-ao-ponto
-- Como salvar a sessão do usuário no navegador para posterior restauração
-- Como validar se a sessão do usuário ainda é válida e como lidar com isso quando a mesma é invalidada
-- Como fazer a limpeza e criação da massa de dados antes do teste começar
-- Como proteger dados sensíveis, tais como senhas e _tokens_ de acesso
-- Como organizar os testes e comandos customizados em diferentes "camadas" (_API, CLI, GUI_)
-- Como estruturar os testes pensando em pré-condições, ações e resultados esperados
-- Como gerar dados aleatórios para uso nos testes automatizados
-- Como habilitar funcionalidades experimentais do Cypress
-- Como executar comandos à nível de sistema operacional
-- E como testar a leitura de arquivos
+### Gestão de Sessão  
+- 💾 Como salvar a sessão do usuário no navegador para posterior restauração  
+- 🔄 Como validar se a sessão do usuário ainda é válida e como lidar com isso quando a mesma é invalidada  
 
-## Vamos começar?
+### Manipulação de Dados  
+- 🗑 Como fazer a limpeza e criação da massa de dados antes do teste começar  
+- 🔐 Como proteger dados sensíveis, tais como senhas e tokens de acesso  
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+### Organização e Estrutura  
+- 🏗 Como organizar os testes e comandos customizados em diferentes "camadas" (API, CLI, GUI)  
+- 📌 Como estruturar os testes pensando em pré-condições, ações e resultados esperados  
 
-___
+### Recursos Avançados  
+- 🎲 Como gerar dados aleatórios para uso nos testes automatizados  
+- ⚙️ Como habilitar funcionalidades experimentais do Cypress  
+- 💻 Como executar comandos à nível de sistema operacional  
+- 📑 Como testar a leitura de arquivos  
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
-"# cypress-intermediario-v2-main" 
+---
