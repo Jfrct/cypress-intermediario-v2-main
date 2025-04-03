@@ -1,4 +1,4 @@
-//realiza login
+//comando especifico para realização de login 
 Cypress.Commands.add('login', (
     user = Cypress.env('user_name'),
     password = Cypress.env('user_password'),
@@ -17,5 +17,16 @@ Cypress.Commands.add('login', (
   Cypress.Commands.add('logout', () => {
     cy.get('.qa-user-avatar').click()
     cy.contains('Sign out').click()
+  })
+  //cria projeto
+  Cypress.Commands.add('create_project', () => {
+    cy.visit('/projects/new')  //clica na aba projetos e novo projeto
+
+    cy.get (`#project_name`).type (project.name)
+    cy.get (`#project_description`).type (project.description)
+    cy.get('.qa-initialize-with-readme-checkbox').check()
+    cy.contains('Create project').click()
+    cy.wait (1000)
+
   })
   //teste
