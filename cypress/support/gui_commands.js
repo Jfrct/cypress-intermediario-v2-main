@@ -1,3 +1,5 @@
+import { faker } from '@faker-js/faker'
+
 //comando especifico para realização de login 
 Cypress.Commands.add('login', (
     user = Cypress.env('user_name'),
@@ -19,7 +21,9 @@ Cypress.Commands.add('login', (
     cy.contains('Sign out').click()
   })
   //cria projeto
-  Cypress.Commands.add('create_project', () => {
+  Cypress.Commands.add('create_project_gui', project => {
+
+
     cy.visit('/projects/new')  //clica na aba projetos e novo projeto
 
     cy.get (`#project_name`).type (project.name)

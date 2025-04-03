@@ -9,11 +9,11 @@ describe('Criar projeto', () => {
     it('Cria projeto com sucesso', () => {
 
         const project = {
-            name: `project-${faker.datatype.uuid()}`,
-            description: faker.random.words(5)
+            name:`project-${faker.datatype.uuid()}`,
+            description:faker.random.words(5)
         }
-
-        cy.create_project()
+        
+        cy.create_project_gui(project)
 
         cy.url().should('be.equal', `${Cypress.config('baseUrl')}/${Cypress.env('user_name')}/${project.name}`)
         cy.contains(project.name).should('be.visible')                                                    //fazem as verificacoes por nome e descrição se o projeto foi criado
